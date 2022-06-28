@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>surfers 프로필 수정</title>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'IBM Plex Sans KR', sans-serif;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="프로필 수정.css">
+</head>
+<body>
+
+    <div>
+        <img src="IMG_1223.JPG" value="profile_pic" alt="프로필 사진 자리" class="profile_pic">
+        <br><input type="button" value="변경" class="profile_pic_change">
+        <form style="text-align: center;">
+            <div id="id_background"><span class="id_account">@surfers_account</span></div>
+        </form> 
+<br>
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <td><input type="text" class="change_info"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>아이디</th>
+                <td><input type="text" class="change_info"></td>
+            </tr>
+
+            <tr>
+                <th>소개</th>
+                <td><input type="text" class="change_info"></td>
+            </tr>
+
+            <tr>
+                <th>이메일</th>
+                <td><input type="text" class="change_info"></td>
+            </tr>
+
+            <tr>
+                <th>전화번호</th>
+                <td><input type="text" class="change_info"></td>
+            </tr>
+
+            <tr>
+                <th>성별</th>
+                <td><select name="gender" size="1" class="select_gender">
+                    <option value="man" selected>남성</option>
+                    <option value="woman">여성</option>
+                    <option value="none_check"> 선택 안 함</option>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <button class="change_profile"><a href="./main.html">프로필 수정</a></button>
+    <!--<input type="button" value="프로필 수정" class="change_profile">-->
+    </div>
+</body>
+</html>

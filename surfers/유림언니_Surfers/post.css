@@ -1,0 +1,73 @@
+body
+{          
+    vertical-align: 30px;
+    background-image: url('../src/main/resources/static/img/surfers 뒷배경.png') !important;
+    background-size: cover;
+}
+
+#content{
+  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+}
+img{
+    overflow: hidden;
+    position: relative;
+}
+#my_profile{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+#friend_profile{
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+button{
+    border: 0;
+    background: white;
+    color: rgb(146, 151, 226);
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.heart :active{
+    box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+    position: relative;
+    top:2px;
+}
+input{
+    border: 0;
+    background-color: transparent;
+}
+.heart {
+    width: 10px;
+    height: 10px;
+    background: #ea2027;
+    position: relative;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.heart:before,.heart:after {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background: #ea2027;
+}
+.heart:before {
+    left: -50%;
+}
+.heart:after {
+    top: -50%;
+}

@@ -1,0 +1,262 @@
+body{
+    margin: 20px;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    /*사이즈
+    height: 100vh;*/
+    width: 870px;
+}
+#all{
+  position: fixed;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+  border-radius: 30px;
+  width: 868px;
+  height: 550px;
+  margin-left: 0;
+  border: 1px solid black;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}
+ul{
+  list-style: none;
+  width: 865px;
+}
+hr{
+  margin: 0;
+}
+.container {
+	width:865px;
+	margin:0 auto;
+}
+header {
+	height:80px;
+  width: 865px;
+	/*display: flex;*/
+	/*align-items: center;*/
+  /*border: 1px solid black;*/
+}
+h2{
+  /*font-family: GungsuhChe;*/
+  width: 300px;
+  margin-left: 0px;
+  padding:0;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+}
+#photo label {
+  font-weight: bold;
+  padding: 10px;
+  left: 125px;
+  position: relative;
+}
+
+#uploading{
+  width: 0px;
+  margin: 0px;
+}
+#new_upload{
+  margin: 0;
+}
+#upload label{
+  color: black
+}
+#upload label:hover{
+  color: rgb(63, 128, 153);
+}
+#new{
+  margin: 0px;
+  height: 400px;
+  width: 865px;
+  /*border: 1px solid black;*/
+  margin: 0;
+}
+#photo{
+  text-align: center ;
+  float: left;
+  margin: 20px;
+  border: 1px solid black;
+  height: 350px;
+  width: 400px;
+  overflow: hidden;
+  position: relative;
+}
+#upload_file,#firstdelete, #uploading{
+  visibility:hidden;
+}
+#photo img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  overflow: hidden;
+  object-fit: cover;
+}
+#firstdelete{
+  width: 0px;
+  margin: 0px;
+  float: right;
+}
+#dd{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#profile{
+  max-height: 80px;
+  width: 100%;
+  position: static;
+  padding: 0;
+  border-style: solid;
+  border-width: 1px 1px 0px 1px;
+}
+#my_profile{
+  margin: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+#id{
+  margin: 5px;
+  width:300px;
+  height: 60px;
+  position: absolute;
+  font-size: 16px;
+  padding: 3px;
+  border: 0;
+}
+#text{
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  width: 403px;
+  height: 350px;
+  
+}
+textarea{
+  padding: 0;
+  width:100%;
+  margin-top: 0px;
+  height: 270px;
+  font-size: 16px;
+  resize: none;
+  
+}
+#back{
+  width: 63px;
+  margin-left: 10px;
+  height: 70px;
+  text-align: center;
+}
+#firsdelete{
+  padding:0;
+}
+.modal_hidden{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  top: 0;
+  left: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+}
+.modal .bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal_content{
+  position: fixed;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 200px;
+  padding: 15px;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+}
+.modal_content h5{
+  font-weight: 300;
+}
+.modal_content button{
+  width: 30%;
+  height: 20%;
+  margin: 0 auto;
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  color: skyblue;
+  padding: 5px;
+  border: 1px solid skyblue;
+  font-weight: bold;
+  text-align: center;
+}
+.modal_content button:hover{
+  color: white;
+  background-color: skyblue;
+}
+.hidden{
+  display: none;
+}
+#uplading{
+  float: right;
+  margin: 0;
+  padding:0;
+  display: flex;
+  align-items: center;
+  
+}
+header > h2 {
+	margin-left:20px;
+}
+header > nav {
+  margin: 0;
+	width:865px;
+	height:100%;
+}
+header ul {
+  padding: 0;
+  margin: 0;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+header ul > li {
+  margin-left: 20px;
+	font-size:20px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+#private{
+  margin-left: 25px;
+}
+h3{
+  margin-top: 0px;
+  margin-bottom: 10px ;
+}
+input[id="cb1"] + label {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #bcbcbc;
+	cursor: pointer;
+}
+/*input[id="cb1"] + label:hover {
+	background-color: #666666;
+}*/
+input[id="cb1"] {
+	display: none;
+}
+input[id="cb1"]:checked + label {
+	background-color: #666666;
+}

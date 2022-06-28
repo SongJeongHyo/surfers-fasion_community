@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>surfers 비밀번호 찾기</title>
+        <meta charset="UTF-8">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;700&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200&display=swap" rel="stylesheet">
+
+        <style>
+            * {
+                font-family: 'IBM Plex Sans KR', sans-serif;
+        
+            }
+
+            body
+        {
+    
+            vertical-align: 30px;
+            background-image: url('../src/main/resources/static/img/surfers 뒷배경.png') !important;
+            background-size: cover;
+        }
+        </style>
+
+        <link rel="stylesheet" type="text/css" href="비밀번호찾기.css">
+    </head>
+    <body>
+
+        <div>
+            <h1 class="logo">surfers !</h1>
+        </div>
+<hr>
+<br>
+        <div id="finding_button">
+        <a href="아이디찾기.html"><input type="button" class="finding_id" value="아이디 찾기"></a><input type="button" value="비밀번호 찾기" class="finding_pw">
+        </div>
+
+        <div class="square">
+            <div>
+                <br><br><div class="input_id_message">가입 시 사용했던 회원 아이디를 입력해주세요</div>
+                <br><label><input type="search" placeholder="아이디 입력" class="input_id"></label>
+                
+
+                <div><br><label><input type="radio" value="telephone" id="finding_id_contents">회원 정보에 등록한 휴대전화로 인증</label>
+                <br><label><input type="search" placeholder="전화번호 입력" id="input_num_email"></label> <input type="button" value="인증번호 전송" class="submit_button">
+                <br> <input type="text" placeholder="인증번호 입력" class="input_checknum">
+                </div>
+                
+        <hr id="hr">
+
+                <div>
+                <label><input type="radio" value="email" id="finding_id_contents">본인확인 이메일로 인증</label> 
+                <br><label><input type="email" placeholder="이메일 입력" id="input_num_email"></label> <input type="button" value="인증번호 전송" class="submit_button">
+                <br> <input type="text" placeholder="인증번호 입력" class="input_checknum">
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

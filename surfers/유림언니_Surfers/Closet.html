@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="ClosetCSS.css">
+     <title>새 게시물 올리기</title>
+ </head>
+ <body>
+     <div id="all">
+         <div id="container">
+             <header>
+                 <nav>
+                    <ul>
+                        <!--게시물 올리기 기본 화면-->
+                        <li><div id="back">
+                            <label for="firstdelete" id="dd">이전</label>
+                            <input type="button" class="open" id="firstdelete" >
+                        </div></li>
+                        <li><h2>게시물 업로드하기</h2></li>
+                        <!--공유하기 누르기-->
+                        
+                        <li><form action="###" id="upload" method="#">
+                            <label for="uploading">공유</label>
+                            <input type="submit" id="uploading" > 
+                        </form></li>
+                    </ul></header></nav><hr>
+        </div>
+        <form action="%"  id="new_upload" method="#">
+            <div id="new">
+                <div id="photo">
+                    <div id="photo1">
+                        <p>사진 올리기 </p>
+                        <label for="upload_file" style="border: 1px solid skyblue; text-align: center; color: skyblue;"> 컴퓨터에서 선택 </label>
+                        <input type="file" id="upload_file" accept="image/*" onchange="setPhoto(event);">
+                    </div>
+                </div>
+                <div id="text">
+                    <div id="profile">
+                        <img src="KakaoTalk_20201231_002802405.jpg" id="my_profile" alt="my_profile">
+                        <input type="text" id="id" value="@id" readonly>
+                    </div>
+                    <textarea class="input" id="textarea" placeholder="입력..." maxlength="2000" wrap=on required> </textarea>
+                </div><div style="clear:both"></div>
+                <!--<p class="textCount">0자</p> <p class="textTotal">/200자</p>-->
+            </div>
+            <div style="clear:both"></div>
+        </form>
+        <!--공개 비공개-->
+        <form action="#" id="check_open" method="">
+            <div id="private">
+                <h3>Set Private</h3>
+                <input type="checkbox" id="cb1" value="0">
+                <label for="cb1"></label>
+            </div>
+        </form>
+        
+        
+        <!--사진을 올리지 않고 업로드하기 눌렀을 때-->
+
+        <!--뒤로 가기, 초기화-->
+        
+        <form action="#" class="hidden" id="formform"method="#">
+            <div class="modal_hidden">
+            <div class="bg"></div>
+                <div class="modal_content">
+                    <h4>정말 삭제하시겠습니까?</h4>
+                    <h5>지금 나가면 수정 내용이 저장되지 않습니다. </h5>
+                    <button class="close" id="close_button" >취소</button>
+                    <button class="real close"><a href="./main.html">삭제</a></button>
+                <!--<a href="javascript:history.back();">뒤로가기</a>-->
+                </div>
+            </div>
+        </form>
+
+        
+        
+        
+    </div>
+    <script src="ClosetJS.js"></script>
+ </body>
+ </html>

@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.6);   
+}
+.notification{
+    top: 80px;
+    position: fixed;
+    right: 0px;
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border-radius:10px 0px 0px 10px;
+}
+.background {
+    width: 100%;
+    height: 100%;
+}
+#contentchild{
+    display: flex;
+    flex-wrap: wrap;
+}
+.background input{
+    margin-left: 10px;
+    margin-top: 5px;
+    width:100%;
+    height: 25px;
+    padding: 0;
+    border: 0;
+    display: flex;
+}
+#friend_profile{
+    display: inline;
+    margin: 10px;
+    height: 40px;
+    width: 38px;
+    border-radius: 70%;
+    overflow: hidden;
+    float: left;
+    border: 2px solid rgb(212, 31, 122);
+}
+.qq{
+    width: 100%;
+    display: inline-block;
+}
+.qq1{
+    width: 100%;
+    display: inline-block;
+}
+#content{
+    margin-top: 10px;
+    width: 420px;
+    margin-right: 0;
+    display: flex;
+}
+#contentchild{
+    margin-right: 10px;
+    width: 340px;
+}
+.fid{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+time{
+    color: gray;
+}
+.my_id{
+    color: rgb(27, 158, 158);
+    font-weight: bold;
+    text-decoration: none;
+}
+#post img{
+    height: 60px;
+    width: 60px;
+    float: right;
+    right: 10px;
+    display: flex;
+}
+.hidden{
+    display: none;
+}
+

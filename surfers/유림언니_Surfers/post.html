@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>post</title>
+     <link rel="stylesheet" href="post.css">
+
+ </head>
+ <body>
+    
+    <div id="content"style="margin-left: 0; border-width: 0px 1px 1px 1px; border-style: solid; border-color: black; height: 100vh; width: 940px;">
+    <h1 style="margin-left: 10px;">Surfers</h1>
+    <hr>
+    <div >
+        <input type="text" id="post_date"value="2022.05.11" style=" margin-left: 10px;border:0; width:120px; margin-bottom: 5px; font-weight: bold;" disabled>
+        <div style="display: flex;">
+            <div>
+                <img src="KakaoTalk_20201231_002802405.jpg" id="photo" style="margin-left: 10px;width: 400px; height:350px; display: flex;">
+                <div style="display: flex;">
+                    <img src="KakaoTalk_20201231_002802405.jpg" id="my_profile" alt="my_profile" >
+                    <a href="#"><input type="text" id="my_id" value="@hooooooyeony" style="border: 0;  margin: 10px; height: 30px; font-weight: bold; cursor: pointer;" disabled></a>
+                    <div style="width: 50px;margin-top: 0px; margin-left: 120px; display: flex;">
+                        <div class="heart" value="heart" style="margin-top: 20px;"></div>
+                        <input type="text" id="heart" value="16" style="border: 0; width: 20px; margin-left: 10px;" disabled>
+                    </div>
+                </div>
+            </div>
+            <input type="textarea" id="text" value="Hoyeon Jung #나 #맞팔" style="border: 0; width:500px; height: 390px; margin-left: 10px; background-color: whitesmoke;" disabled>
+        </div>
+        <hr>
+        <div style="height: 55px; display: flex;">
+            <img src="KakaoTalk_20201231_002802405.jpg" id="my_profile" alt="my_profile" >
+            <input type="textarea" id="commenting" placeholder="댓글 달기..."style="border: 1px solid black; width: 600px; height: 50px; margin-left: 10px;">
+            <button onclick="upload_comment()">게시</button>
+            
+        </div><hr>
+        <div id="@@">
+            <div id="comment" style="display: flex;">
+                <img src="KakaoTalk_20201231_002802405.jpg" id="friend_profile" alt="friend_profile" >
+                <div>
+                    <div style="display: flex;">
+                        <div><a href="#"><input type="text" id="fid" value="@freind" style="border: 0; height: 30px; width: 70px; font-weight: bold; cursor: pointer;" overflow="visible" disabled></a></div>
+                        <input type="text" id="reply" value="너무 예쁘다!" style="height: 30px; margin-left: 5px;" disabled>
+                    </div>
+                    <div style="display: flex;">
+                        <div style="margin-left: 4px;"><input type="text" id="comment_date"value="05/23" style="width:50px" disabled></div>
+                        <div class="heart" value="heart" style="margin-top: 8px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    </div>
+    <script src="post.js"></script>
+
+ </body>
+ </html>

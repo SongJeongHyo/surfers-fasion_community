@@ -1,0 +1,18 @@
+moon/clone/instargram/web/controller/IndexControllerTest.java
+ moon.clone.instargram.web.controller.IndexControllerTest
+moon/clone/instargram/domain/user/UserRepositoryTest.java
+ moon.clone.instargram.domain.user.UserRepositoryTest
+moon/clone/instargram/service/UserServiceTest.java
+ moon.clone.instargram.service.UserServiceTest
+moon/clone/instargram/domain/post/PostRepositoryTest.java
+ moon.clone.instargram.domain.post.PostRepositoryTest
+moon/clone/instargram/domain/follow/FollowRepositoryTest.java
+ moon.clone.instargram.domain.follow.FollowRepositoryTest
+moon/clone/instargram/service/FollowServiceTest.java
+ moon.clone.instargram.service.FollowServiceTest
+moon/clone/instargram/service/CommentServiceTest.java
+ moon.clone.instargram.service.CommentServiceTest
+moon/clone/instargram/domain/likes/LikesRepositoryTest.java
+ moon.clone.instargram.domain.likes.LikesRepositoryTest
+moon/clone/instargram/domain/comment/CommentRepositoryTest.java
+ moon.clone.instargram.domain.comment.CommentRepositoryTest

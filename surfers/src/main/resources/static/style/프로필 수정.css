@@ -1,0 +1,93 @@
+
+table
+{
+  margin: 0 auto;
+  width: 400px;
+}
+
+.profile_pic
+{
+    width: 135px;
+    height: 135px;
+    border-radius: 100%;
+}
+
+.profile_pic_change
+{
+    margin-bottom: 1%;
+    border: none;
+    width: 50px;
+    border-radius: 10px;
+    background-color:rgb(133, 133, 201);
+    color:rgb(250, 253, 255);
+    font-size: 15px;
+}
+
+#id_background
+{
+    background-color: rgb(255, 250, 215);
+    width: 300px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.id_account
+{
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+td,th
+{
+    font-size: 14px;
+    border-top: 1px solid ;
+    border-left: 1px solid ;
+    border-color: rgb(168, 168, 168);
+    border-collapse: collapse;
+    color: rgb(68, 68, 139);
+}
+
+th:first-child, td:first-child
+{
+    border-left: none;
+    height: 35px;
+}
+
+.change_profile
+{
+    border-radius: 30px;
+    border: 2px solid rgb(133, 133, 201);
+    width: 200px;
+    color: rgb(68, 68, 139);
+    background-color:rgb(250, 253, 255);
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.change_info
+{
+    border-radius: 30px;
+    border: 2px solid rgb(133, 133, 201);
+    width: 200px;
+    color: rgb(68, 68, 139);
+    background-color:rgb(250, 253, 255);
+    height: 20px;
+}
+
+.select_gender
+{
+    border-radius: 30px;
+    border: 2px solid rgb(133, 133, 201);
+    width: 50px;
+    color: rgb(68, 68, 139);
+    background-color:rgb(250, 253, 255);
+    height: 20px;
+}
+
+a
+{
+    text-decoration-line: none;
+    color: inherit;
+}

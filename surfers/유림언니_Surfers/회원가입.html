@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>surfers 회원가입</title>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;700&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'IBM Plex Sans KR', sans-serif;
+        }
+        body
+        {
+            text-align: center;
+            vertical-align: 30px;
+            background-image: url('../src/main/resources/static/img/surfers_back.png') !important;
+            background-size: cover;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../src/main/resources/static/style/signup.css">
+    </head>
+
+    <body>
+        <form id="join_form">
+        <div>
+            <h1 class="logo">surfers !</h1>
+        </div>
+
+        <table class="table_show">
+        <thead>
+        <tr>
+            <th>아이디</th>
+            <td>
+            <label><input id ="id" type = 'text' class="personal_infobox" placeholder="ID">     <input type="button" value="중복 확인" class="id_button"></label>
+            </td>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <th>비밀번호</th>
+            <td>
+            <label><input id="pw" maxlength="16" type='text' class="personal_infobox" placeholder="PASSWORD"></label>
+            <br><span class="warning"> * 8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</span></td>
+        </tr>
+
+        <tr>
+            <th>비밀번호 재확인</th>
+            <td><label><input id="r_pw" type='text' class="personal_infobox" placeholder="CONFIRM PASSWORD"></label>
+            </td>
+        </tr>
+
+        <tr>
+            <th>이름</th>
+            <td><label><input type='text' class="personal_infobox" placeholder="NAME"></label>
+            </td>
+        </tr>
+
+        <tr>
+            <th>성별</th>
+            <td>
+            <input type="radio" name="gender" value="m" checked>남자
+            <input type="radio" name="gender" value="w">여자
+            </td>
+        </tr>
+
+        <tr>
+            <th>생년월일</th>
+            <td>
+            <input type="date" name="date" class="personal_infobox" min="1922-01-01" max="2022-5-12">
+            </td>
+        </tr>
+
+        <tr>
+            <th>전화번호</th>
+            <td>
+            <input type="tel" name="telephone" placeholder="010-0000-0000" class="personal_infobox">
+
+            </td>
+        </tr>
+        </tbody>
+        </table>
+
+        <input type="submit" value="join" class="join_button">
+        </form>
+        <script src="회원가입.js"></script>
+    </body>
+</html>

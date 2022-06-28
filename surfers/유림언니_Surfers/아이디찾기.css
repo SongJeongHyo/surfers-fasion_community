@@ -1,0 +1,90 @@
+.logo
+{
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-style: italic;
+   font-size: 50px;
+   margin-left: 4%;
+   text-align: left; 
+}
+
+
+#finding_button
+{
+    margin-left: 4%;
+    width: 40%;
+}
+
+.finding_id
+{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(100, 124, 100);
+    width: 30%;
+    height: 40px;
+    font-size: 18px;
+    color: rgb(255, 251, 234);
+}
+
+.finding_pw
+{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(153, 173, 153);
+    width: 30%;
+    height: 40px;
+    font-size: 18px;
+    color: rgb(255, 251, 234);
+}
+
+
+.square
+{
+    width: 900px;
+    height: 500px;
+    background-color: rgb(225, 230, 205);
+    border: none;
+    border-radius: 20px;
+    margin-left: 3%;
+}
+
+#hr
+{
+    margin-top: 5%;
+}
+
+#finding_id_contents
+{
+    margin-left: 3%;
+    margin-top: 5%;   
+}
+
+#input_num_email
+{
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 25%;
+    height: 40px;
+    border-radius: 15px;
+    border:rgb(100, 124, 100) solid 2px;
+    background-color: rgb(255, 254, 244);
+}
+
+.submit_button
+{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 252, 230);
+    height: 30px;
+    margin-left: 1%;
+}
+
+.input_checknum
+{
+    margin-left: 5%;
+    margin-top: 10px;
+    width: 15%;
+    height: 35px;
+    border-radius: 15px;
+    border:rgb(100, 124, 100) solid 2px;
+    background-color: rgb(255, 254, 244);
+}

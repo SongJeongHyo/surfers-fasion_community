@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>surfers 프로필 수정</title>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'IBM Plex Sans KR', sans-serif;
+            text-align: center;
+        }
+        body
+        {
+            margin: 0 auto !important;
+            margin-top: 80px !important;
+            width: 500px;
+            align-content: center;
+            background-image: url('/img/edit_surfers_background.svg');
+            background-size: cover;
+            text-align: center;
+        }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="/style/프로필 수정.css">
+</head>
+<body>
+
+<div>
+    <img src="@{${'/profile_imgs/' + #authentication.getPrincipal().getUser().getProfileImgUrl()}}" value="profile_pic" alt="프로필 사진 자리" class="profile_pic" onerror="this.src='/img/default_profile.jpg';">
+    <br><!--<input type="button" value="변경" class="profile_pic_change">-->
+    <form style="text-align: center;">
+        <div id="id_background"><span class="id_account" th:text="${#authentication.getPrincipal().getUser().getName()}" ></span></div>
+    </form>
+    <br>
+
+    <!--프로필 수정-->
+    <table>
+        <form id="profileUpdate" action="/user/update" method="post" enctype="multipart/form-data">
+            <table>
+                <input type="hidden" name="id" id="id" th:value="${#authentication.getPrincipal().getUser().getId()}">
+                <thead>
+                <tr>
+                    <th>이름</th>
+                    <td><input type="text" class="change_info" name="name" id="name" placeholder="유저네임" th:value="${#authentication.getPrincipal().getUser().getName()}" required="required" /></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>이메일</th> <!--아이디-->
+                    <td><input type="text" class="change_info" name="email" id="email"  th:value="${#authentication.getPrincipal().getUser().getEmail()}" readonly="readonly"/></td>
+                </tr>
+                <tr>
+                    <th>패스워드</th> <!--아이디-->
+                    <td><input type="password" class="change_info" name="password" id="password" placeholder="패스워드" required="required"/></td>
+                </tr>
+                <tr>
+                    <th>소개</th>
+                    <td><textarea class="change_info" name="title" id="title" rows="3" th:text="${#authentication.getPrincipal().getUser().getTitle()}"></textarea></td>
+                </tr>
+                <tr>
+                    <th>전화번호</th>
+                    <td><input type="text" class="change_info" name="phone" id="phone" placeholder="전화번호" th:value="${#authentication.getPrincipal().getUser().getPhone()}" /></td>
+                </tr>
+                <tr>
+                    <th>프로필 사진</th>
+                    <td><input type="file" class="change_info" name="profileImgUrl" id="profileImgUrl" /></td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+            <tr><button class="change_profile" id="btn_update">프로필 수정</button></tr>
+        </form>
+    </table>
+</div>
+<footer th:replace="layout/common :: footer('footer')"></footer>
+</body>
+</html>

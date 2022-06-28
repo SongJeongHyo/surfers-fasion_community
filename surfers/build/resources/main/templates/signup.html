@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/XSL/Transfo">
+<head>
+    <title>surfers 회원가입</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200&display=swap" rel="stylesheet">
+
+    <link href="/style/signup.css" rel="stylesheet" type="text/css" />
+    <link href="/style/login.css" rel="stylesheet" type="text/css" />
+
+    <style>
+            * {
+                font-family: 'IBM Plex Sans KR', sans-serif;
+            }
+            body
+            {
+                text-align: center;
+                vertical-align: 30px;
+                background-image: url('/img/surfers_back.svg') !important;
+                background-size: cover;
+            }
+        </style>
+
+    <!-- favicon -->
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="instagram-icon" href="/img/favicon.png">
+
+</head>
+<body>
+<div class="container">
+    <h1 class="logo">surfers !</h1>
+    <form action="/signup" method="post">
+
+        <table class="table_show">
+            <thead>
+            <tr>
+                <th>email</th>
+                <td>
+                    <input type="email" class="input_signup" name="email" id="email" placeholder="이메일 주소" required="required"/>
+                    <!--                <input type="button" value="중복 확인" class="email_input_check" id="email_input_check"></label>-->
+                    <!--                <button id="email_input_check" class="email_input_check"> 중복 확인 </button></label>-->
+                    <!--                <div id="emailError" class="error"></div>-->
+                </td>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <th>비밀번호</th>
+                <td>
+                    <label><input type="password" class="input_signup" name="password" id="password" placeholder="비밀번호" required="required" maxlength="16" /></label>
+                    <div id="passwordError" class="warning"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <th>비밀번호 재확인</th>
+                <td><label><input type='password' class="input_signup" name="pwCheck" id="pwCheck" placeholder="CONFIRM PASSWORD" required="required"maxlength="16"></label>
+                    <div id="passwordCheckError" class="warning"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <th>이름</th>
+                <td><label><input type="text" class="input_signup" name="name" id="name" placeholder="NAME" required="required" /></label>
+                </td>
+            </tr>
+
+            <!--        <tr>-->
+            <!--            <th>성별</th>-->
+            <!--            <td>-->
+            <!--                <input type="radio" name="gender" value="m" checked>남자-->
+            <!--                <input type="radio" name="gender" value="w">여자-->
+            <!--            </td>-->
+            <!--        </tr>-->
+
+            <!--        <tr>-->
+            <!--            <th>생년월일</th>-->
+            <!--            <td>-->
+            <!--                <input type="date" name="date" id="date" class="input_signup" min="1922-01-01" max="2022-5-12">-->
+            <!--            </td>-->
+            <!--        </tr>-->
+
+            <tr>
+                <th>전화번호</th>
+                <td>
+                    <input type="text" id="phone" name="phone" placeholder="010-0000-0000" class="input_signup">
+
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <button id="btn_signup" class="btn_signup" disabled> join </button>
+    </form>
+    <a href="/login" class="button_login">계정이 있으신가요?  로그인</a>
+</div>
+<script src="/js/signup.js"></script>
+</body>
+</html>

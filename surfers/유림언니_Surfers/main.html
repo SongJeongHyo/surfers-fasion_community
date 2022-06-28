@@ -1,0 +1,238 @@
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body
+        {
+            text-align: center;
+            vertical-align: 30px;
+            background-image: url('../src/main/resources/static/img/surfers_뒷배경.png') !important;
+            background-size: cover;
+        }
+    </style>
+
+    <title>Surfers</title>
+</head>
+<body>
+    <nav>
+        <div class = "topnav">
+            <div class="topspan">
+                <div class=" firsttopnav"><a class ="topnavs" href="./notif.html">Notification</a></div>
+                <div ><a class ="topnavs" href="#">Search</a></div>
+                <div class="topnavs" id="Mypagenav">
+                    <ul class="Mypagemenu">
+                        <li><a class="topnavs" href="#">Mypage</a>
+                            <ul class="sub">
+                                <li><a href="./프로필 수정.html">profile</a></li>
+                                <li><a href="#">archive</a></li>
+                                <li><a href="#">logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div ><a class ="topnavs" href="./로그인.html">Login</a></div>
+    
+            </div>
+        </div>
+    
+        <div class ="midnav">
+            <div class="surfers">
+                Surfers
+            </div>
+            <div class="midspan">
+                <div class="midnavs"><a href="#">Community</a></div>
+                <div class="midnavs"><a href="#">OOTD</a></div>
+                <div class="midnavs"><a href="notice.html">Notice</a></div>
+            </div>
+        </div>
+    
+        <div class="nav">
+            <div class="navnavs"><a class="navnavs" href="#">Community</a></div>
+            <div class="navnavs writenavs"><a class="writenav" href="./Closet.html">write</a></div>
+        </div>
+    </nav>
+    
+    <div class="main">   
+        <div class="mainspan">     
+                <div class="content">
+                    <div class="picture">
+                        <a href="./post.html" class="img_a"><img class="contImg" src="img/testa.png"></a>
+                    </div>
+                    <div class="contentnav">
+                        <div class="time">
+                            2022.05.11
+                        </div>
+                        <div class="icons">
+                                <div class="icon">
+                                    <img id="feed_like" onclick="like()" src="./img/heart.png" alt="">
+                                </div>
+                                <div class="icon" >
+                                    <a href="javascript:openPop()">
+                                        <span class="material-symbols-outlined">
+                                        comment
+                                        </span>
+                                    </a>
+                                    <div class="popup_layer" id ="popup_layer" style ="display:none;">
+                                        <div class="popup_box">
+                                            <div style ="height: 10px; width: 375px; float:top;">
+                                                <a id ="popup_a" href="javascript:closePop();" >
+                                                    <img src="./img/ic_close.svg" alt="icon_close" class="m_header-banner-close" style="width:40px; height:40px;">
+                                                </a>
+                                            </div>
+                                            <div class="popup_cont">
+                                                <h2>Comment</h2>
+                                                <p> 
+                                                    <div>
+     
+                                                        <div class="main-icon-like-text-write_comment">
+                                                    
+                                                        </div>
+                                                    </div>
+                                                
+                                                
+                                                    <div class="main_comment">
+                                                        <input class="main_comment_text" type="text" placeholder="댓글 달기...">
+                                                        <button class="main_comment_submit">게시</button>
+                                                    </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="guel">
+                        HoyeonJung
+                    </div>
+                    <div class="nickname">
+                        @hoooooyeony
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="picture">
+                        <a><img src="img/testb.jpeg"></a>
+                    </div>
+                    <div class="contentnav">
+                        <div class="time">
+                            2022.05.09
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <img id="feed_like" onclick="like()" src="./img/heart.png" alt="">
+                            </div>
+                            <div class="icon" >
+                                <a href="javascript:openPop()">
+                                     <span class="material-symbols-outlined">
+                                     comment
+                                    </span>
+                                </a>
+                                <div class="popup_layer" id ="popup_layer" style ="display:none;">
+                                    <div class="popup_box">
+                                        <div style ="height: 10px; width: 375px; float:top;">
+                                            <a id ="popup_a" href="javascript:closePop();" >
+                                                <img src="./img/ic_close.svg" alt="icon_close" class="m_header-banner-close" style="width:40px; height:40px;">
+
+                                            </a>
+                                        </div>
+                                        <div class="popup_cont">
+                                            <h2>Comment</h2>
+                                            <p> 
+                                                <div>
+ 
+                                                    <div class="main-icon-like-text-write_comment">
+                                                
+                                                    </div>
+                                                </div>
+                                            
+                                            
+                                                <div class="main_comment">
+                                                    <input class="main_comment_text" type="text" placeholder="댓글 달기...">
+                                                    <button class="main_comment_submit">게시</button>
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="guel">
+                        HoyeonJung
+                        pretty
+                    </div>
+                    <div class="nickname">
+                        @hoooooyeony
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="picture">
+                        <a><img src="img/testc.jpeg"></a>
+                    </div>
+                    <div class="contentnav">
+                        <div class="time">
+                            2022.04.20
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <img id="feed_like" onclick="like()" src="./img/heart.png" alt="">
+                            </div>
+                            <div class="icon" >
+                                <a href="javascript:openPop()">
+                                    <span class="material-symbols-outlined">
+                                        comment
+                                    </span>
+                                </a>
+                                <div class="popup_layer" id ="popup_layer" style ="display:none;">
+                                    <div class="popup_box">
+                                        <div style ="height: 10px; width: 375px; float:top;">
+                                            <a id ="popup_a" href="javascript:closePop();" >
+                                                <img src="./img/ic_close.svg" alt="icon_close" class="m_header-banner-close" style="width:40px; height:40px;">
+
+                                            </a>
+                                        </div>
+                                        <div class="popup_cont">
+                                            <h2>Comment</h2>
+                                            <p> 
+                                                <div>
+ 
+                                                    <div class="main-icon-like-text-write_comment">
+                                                
+                                                    </div>
+                                                </div>
+                                            
+                                            
+                                                <div class="main_comment">
+                                                    <input class="main_comment_text" type="text" placeholder="댓글 달기...">
+                                                    <button class="main_comment_submit">게시</button>
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="guel">
+                        HoyeonJung
+                        cute
+                    </div>
+                    <div class="nickname">
+                        @hoooooyeony
+                    </div>
+                </div>
+                
+
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./toggle.js"></script>
+</body>
+
+</html>

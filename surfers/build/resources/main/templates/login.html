@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kr" xmlns:th="http://www.w3.org/1999/XSL/Transfo">
+
+<head>
+    <title>surfers 로그인창</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style/login.css">
+
+
+    <style>
+
+        * {
+            font-family: 'IBM Plex Sans KR', sans-serif;
+
+        }
+        body
+        {
+            text-align: center;
+            vertical-align: 30px;
+            background-image: url('/img/surfers_back.svg') !important;
+            background-size: cover;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<div class="container">
+    <!-- 커뮤니티 사이트의 로고를 상단에 배치 -->
+    <br>
+    <br>
+
+    <div>
+        <h1 class="logo">surfers !</h1>
+    </div>
+
+    <form id="login_form" action="/loginForm" method="post">
+        <input type="text" class="username" name="username" id="username" placeholder="Email"><br>
+
+        <label id="pw">
+            <input type="password" class="password" name="password" id="password" placeholder="PASSWORD">
+        </label><br>
+
+        <span class="login_input_check" th:if="${param.error}" > 입력한 계정을 찾을 수 없습니다. </span>
+
+        <!--    <div class="login_remain">-->
+        <!--        <input type="checkbox" value="로그인 상태 유지"> 로그인 상태 유지-->
+        <!--    </div>-->
+        <br>
+
+        <!-- 로그인 버튼 -->
+        <div>
+            <!--        <input type="submit" value="LOGIN" id="login_button"><br>-->
+            <button id="btn_login" disabled>LOGIN</button>
+
+        </div>
+
+
+        <!-- 회원가입/비번 or 아이디 찾기-->
+        <div>
+            <a href="/signup" class="finding">Surfers에 처음 오신다면?</a>
+        </div>
+        <!--    <div>-->
+        <!--        <a href="../../../../유림언니_Surfers/아이디찾기.html" class="finding">아이디나 비밀번호를 잊어버리셨나요?</a>-->
+        <!--    </div>-->
+    </form>
+</div>
+<script src="/js/login.js"></script>
+
+</body>
+
+</html>

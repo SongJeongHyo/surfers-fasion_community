@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<!--<head th:replace="layout/common :: head('Instargram')"></head>-->
+<!--<body>-->
+<!--<head th:replace="layout/common :: menu('menu')"></head>-->
+<head><title>새 게시물 올리기</title>
+    <link rel="stylesheet" type="text/css" href="/style/사진업로드.css">
+</head>
+<body>
+<div id="all">
+    <div id="container">
+        <header>
+            <nav>
+                <ul style="margin-top: 15px">
+                    <!--게시물 올리기 기본 화면-->
+                    <!--                    <li><div id="back">-->
+                    <!--                        <label for="firstdelete" id="dd" style="cursor: pointer;">이전</label>-->
+                    <!--                        <input type="button" class="open" id="firstdelete" >-->
+                    <!--                    </div></li>-->
+                    <li><a href="/">이전</a></li>
+                    <li><h2>게시물 업로드하기</h2></li>
+                    <!--                    <li>-->
+                    <!--                        <label for="uploading" style="cursor: pointer;">공유</label>-->
+                    <!--                        <input type="button" class="cta blue" id="uploading" >-->
+                    <!--                    </li>-->
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <hr/>
+
+    <!--사진 업로드페이지 중앙배치-->
+    <main class="uploadContainer">
+        <!--사진업로드 박스-->
+        <section class="upload">
+            <!--        <div id="new">-->
+            <!--        &lt;!&ndash;사진업로드 로고&ndash;&gt;-->
+            <!--        <div class="upload-top">-->
+            <!--            <a href="/user/story.html" class="">-->
+            <!--                <img src="/img/logo_text.png" alt="">-->
+            <!--            </a>-->
+            <!--            <p></p>-->
+            <!--            <h6>사진 업로드</h6>-->
+            <!--        </div>-->
+            <!--        &lt;!&ndash;사진업로드 로고 end&ndash;&gt;-->
+            <!--        </div>-->
+
+            <div id="new">
+                <!--사진업로드 Form-->
+                <form class="upload-form" action="/post" method="post" enctype="multipart/form-data" style="margin-left: 100px">
+                    <input  type="file" name="uploadImgUrl" id="uploadImgUrl" th:onchange="|imageChoose(this)|" style="margin-bottom: 50px; margin-top: 50px"/>
+                    <div class="upload-img">
+                        <img src="/img/default_profile.jpg" alt="" id="imageUploadPreview" />
+                    </div>
+
+                    <div id="text">
+                        <!--사진설명 + 업로드버튼-->
+                        <div class="upload-form-detail">
+                            <textarea class="input_upload" name="text" id="textarea" rows="5"> </textarea>
+                            <input type="text" placeholder="태그. 공백 없이 ,로 구분하여 입력해주세요." name="tag" id="tag" style="width: 400px; height: 30px; margin-top:10px"/>
+                            <hr/>
+                            <button class="cta blue" style="float:right; margin-top:10px">업로드</button>
+                        </div>
+                        <!--사진설명end-->
+                    </div>
+
+                </form>
+                <!--사진업로드 Form-->
+            </div>
+        </section>
+        <!--사진업로드 박스 end-->
+    </main>
+
+
+    <!--<br/><br/>-->
+    <!--<footer th:replace="layout/common :: footer('footer')"></footer>-->
+    <script src="/js/upload.js" ></script>
+</div>
+</body>
+</html>

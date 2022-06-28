@@ -1,0 +1,61 @@
+
+.logo
+{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+}
+
+.username, .password
+{
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#login_form
+{
+    width: 300px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(214, 214, 214);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#btn_login
+{
+font-size: 12px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/*background-color: rgb(177, 177, 177);*/
+background-color: rgb(250, 250, 250);
+
+margin-bottom: 30px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#btn_login:disabled {
+    /*background-color: rgb(250, 250, 250);*/
+    background-color: rgb(177, 177, 177);
+
+}
+
+.finding
+{
+    color: rgb(107, 107, 107);
+    font-size: 12px;
+}
+
+.login_input_check {
+    color: red;
+}
