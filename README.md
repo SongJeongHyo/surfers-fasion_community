@@ -13,8 +13,6 @@ spring을 이용한 22년도-1학기 이니로 동아리 프로젝트 back-end
 
 백엔드 - IntelliJ IDEA, Java 14, Gradle 7.0.2, Spring Boot 2.5.2, Maria DB
 
-### 하였습니다.
-
 ### 먼저 DataBase table입니다.
 
 ![Untitled](https://user-images.githubusercontent.com/79832986/226159933-68aa0da7-dda6-40f7-9b8b-30daf5fcaf0d.png)
