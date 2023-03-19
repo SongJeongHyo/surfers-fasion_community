@@ -2,11 +2,6 @@
 
 spring을 이용한 22년도-1학기 이니로 동아리 프로젝트 back-end
 
-[최종_보고서.pdf](https://github.com/201810777/surfers/files/8999579/_.pdf)
-
-# 최종 보고서
-
-## Surfers 옷 정보 커뮤니티
 
 백엔드 - 김예진, 김동윤, 송정효
 
@@ -178,3 +173,4 @@ follow 부분의 Database table 입니다. 서로 팔로우가 되어있는 것�
 
 User본인이 좋아요를 누른 게시물을 확인할 수 있는 페이지입니다.
 
+[최종_보고서.pdf](https://github.com/201810777/surfers/files/8999579/_.pdf)
